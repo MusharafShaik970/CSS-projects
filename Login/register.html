@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>REGISTRATION FORM</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="" class="clearfix">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Email" required>
+            </div>
+                   
+            <div class="input-box">
+                <input type="skills" placeholder="Skills You Know ?" required>
+            </div>
+            <!-- <div class="input-box">
+                <select id="main-skills" onchange="changeSubSkills()">
+                    <option value="">Select Skill</option>
+                    <option value="web">WEB DEVELOPMENT</option>
+                    <option value="android">ANDROID DEVELOPMENT</option>
+                </select>
+            </div>
+            <div class="input-box" id="sub-skills">
+                <!-- Sub skills will be populated here -->
+            <!-- </div>
+            
+            <script>
+                function changeSubSkills() {
+                    var mainSkill = document.getElementById("main-skills").value;
+                    var subSkills = document.getElementById("sub-skills");
+            
+                    // Clear existing options
+                    subSkills.innerHTML = "";
+             -->
+                    <!-- var options = [];
+            
+                    if (mainSkill === "web") {
+                        options = ["HTML", "CSS", "JavaScript", "React", "Node Js", "Django", "UI/UX"];
+                    } else if (mainSkill === "android") {
+                        options = ["Flutter", "Kotlin", "Java", "React Native"];
+                    }
+            
+                    // Add new options
+                    for (var i = 0; i < options.length; i++) {
+                        var checkbox = document.createElement("input");
+                        checkbox.type = "checkbox";
+                        checkbox.name = "skills";
+                        checkbox.value = options[i];
+                        checkbox.id = "skill" + i;
+            
+                        var label = document.createElement('label')
+                        label.htmlFor = "skill" + i;
+                        label.appendChild(document.createTextNode(options[i]));
+            
+                        subSkills.appendChild(checkbox);
+                        subSkills.appendChild(label);
+                        subSkills.appendChild(document.createElement("br"));
+                    }
+                }
+            </script> -->
+            <div class="input-box"> 
+                <input type="Text" placeholder="Projects" required>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Location" required>
+            </div>
+            <!-- <div class="input-box">
+                <input type="file" accept="image/*,image/webp" placeholder="Profile Picture" required>
+            </div> -->
+            <div class="remember-forgot">
+                <label for="remember me"><input type="checkbox"  id="remember me" required>Remember me</label>
+            </div>
+            <button type="submit" class="button">Login</button>
+            <div class="register">
+                <p>Have an account? Sign In
+                <a href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

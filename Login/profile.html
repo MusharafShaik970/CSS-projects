@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .profile-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+    }
+
+    .profile-header {
+      background-color: #0077b5;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .profile-picture {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      margin-bottom: 5px;
+    }
+
+    .profile-info {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .profile-info h2 {
+      margin-bottom: 5px;
+    }
+
+    .profile-info p {
+      margin: 0;
+      color: #555;
+      gap: 1rem;
+    }
+
+    .skills {
+      font-style: italic;
+      color: #888;
+      margin-top: 10px;
+    }
+
+    .contact-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #0077b5;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .info{
+        padding-bottom: 1rem;
+    }
+
+    span{
+        font-weight: bold;
+    }
+
+    .contact-button:hover {
+      background-color: #005983;
+      padding-right: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+    <div class="profile-header">
+      <img class="profile-picture" src="img1.webp" alt="Profile Picture">
+      <h2>User Name</h2>
+    </div>
+    <div class="profile-info">
+      <p class="info"><span>Email:</span>user@example.com</p>
+      <p class="skills info"><span>Skills:</span> HTML, CSS, JavaScript</p>
+      <a href="#" class="contact-button ">Let's Chat</a>
+    </div>
+  </div>
+
+</body>
+</html>
